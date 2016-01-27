@@ -16,6 +16,7 @@ $(document).ready(function() {
 	$('#seconds').text(":00");
 	$('#status').text("Start working");
 	$('#start').click(function() {
+		$("#start").hide();
 		start();
 	})
 });
@@ -25,13 +26,13 @@ function start() {
 		working = 0;
 		$('#title').text("Working");
 		$('#status').text("Start your break");
-		createTimer(5);
+		createTimer(1500);
 	}
 	else {
 		working = 1;
 		$('#title').text("On a break");
 		$('#status').text("Start working");
-		createTimer(10);
+		createTimer(300);
 	}
 }
 
