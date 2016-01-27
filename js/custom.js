@@ -1,10 +1,20 @@
 $(document).ready(function() {
 	$('#robotarm').hide();
 	$('#firerobot').hide();
+	$('#website').hide();
+	var count = 1;
 
 	$('#moreProjects').click(function() {
 		$('#robotarm').slideToggle("normal");
 		$('#firerobot').slideToggle("normal");
+		$('#website').slideToggle("normal");
+		if(count === 1) {
+			$('#button-text').text('Hide more projects');
+			count = 0;
+		} else {
+			$('#button-text').text('Show more projects');
+			count = 1;
+		}
 	});
 
 	$('a[href^="#"]').on('click',function (e) {
