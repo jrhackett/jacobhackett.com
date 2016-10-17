@@ -1,0 +1,322 @@
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 70px;
+	z-index: 10;
+	background-color: transparent;
+	-webkit-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-moz-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-o-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.scrolled nav.open {
+	background-color: transparent;
+}
+
+.scrolled nav {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hamburger {
+	width: 38px;
+	height: 45px;
+	position: relative;
+	left: 16px;
+	margin: 16px 0 1px 0;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.hamburger span {
+	background: #FFF;
+	display: block;
+	position: absolute;
+	height: 6px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-moz-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-o-transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	opacity: 1;
+	width: 100%;
+}
+
+.hamburger span {
+	width: 50%;
+	-webkit-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-moz-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-o-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.hamburger span:nth-child(even) {
+	left: 50%;  
+	border-radius: 0 9px 9px 0;
+}
+.hamburger span:nth-child(odd) {
+	left: 0px;  
+	border-radius: 9px 0 0 9px;
+}
+.hamburger span:nth-child(1), .hamburger span:nth-child(2) {
+	top: 0px;
+}
+.hamburger span:nth-child(3), .hamburger span:nth-child(4) {
+	top: 12px;
+}
+.hamburger span:nth-child(5), .hamburger span:nth-child(6) {
+	top: 24px;
+}
+.hamburger.open span:nth-child(1), .hamburger.open span:nth-child(6) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.hamburger.open span:nth-child(2), .hamburger.open span:nth-child(5) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.hamburger.open span:nth-child(1) {
+	left: 5px;
+	top: 7px;
+}
+.hamburger.open span:nth-child(2) {
+	left: calc(50% - 5px);
+	top: 7px;
+}
+.hamburger.open span:nth-child(3) {
+	left: -50%;
+	opacity: 0;
+}
+.hamburger.open span:nth-child(4) {
+	left: 100%;
+	opacity: 0;
+}
+.hamburger.open span:nth-child(5) {
+	left: 5px;
+	top: 16px;
+}
+.hamburger.open span:nth-child(6) {
+	left: calc(50% - 5px);
+	top: 16px;
+}
+
+#menu {
+	position: absolute;
+	left: -250px;
+	top: 0;
+	padding-top: 100px;
+	width: 250px;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	-webkit-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-moz-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-o-transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: .25s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#menu.open {
+	left: 0;
+}
+
+#menu a, #menu a:hover, #menu a:visited, #menu a:focus {
+	color: white;
+	text-decoration: none;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+.fh {
+	height: 80vh;
+}
+
+#intro {
+	background-image: url("../assets/img/banner.jpg");
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+#intro header {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.short-section {
+	background-color: #333;
+	color: white;
+	padding: 30px 0;
+}
+
+.project-card {
+	margin-bottom: 30px;
+}
+
+.project-header {
+	padding-left: 0;
+}
+
+#fire-fighting-robot .project-details {
+	background: url("../assets/img/projects/2002.png") center center / cover no-repeat;
+}
+
+#colors .project-details {
+	background: url("../assets/img/projects/colors.png") center center / cover no-repeat;
+}
+
+#cokeorpepsi .project-details {
+	background: url("../assets/img/projects/cokeorpepsi.png") center center / cover no-repeat;
+}
+
+#seven-hills .project-details {
+	background: url("../assets/img/projects/7hills.png") center center / cover no-repeat;
+}
+
+#manipulation .project-details {
+	background: url("../assets/img/projects/arm.png") center center / cover no-repeat;
+}
+
+#capranav .project-details {
+	background: url("../assets/img/projects/capra.png") center center / cover no-repeat;
+}
+
+#crypto-trading .project-details {
+	background: url("../assets/img/projects/trading.png") center center / cover no-repeat;
+}
+
+#website .project-details {
+	background: url("../assets/img/projects/code.png") center center / cover no-repeat;
+}
+
+#rbe3002 .project-details {
+	background: url("../assets/img/projects/3002-map.jpg") center center / cover no-repeat;
+}
+
+#connect4ai .project-details {
+	background: url("../assets/img/projects/connect4.jpg") center center / cover no-repeat;
+}
+
+#spells .project-details {
+	background: url("../assets/img/projects/spells.jpg") center center / cover no-repeat;
+}
+
+#code-snippets .project-details {
+	background: url("../assets/img/projects/code-snippets.png") center center / cover no-repeat;
+}
+
+#segway-mqp .project-details {
+	background: url("../assets/img/projects/segway.jpg") center center / cover no-repeat;
+}
+
+.place-project .project-details{
+	background: url("http://placekitten.com/500/") center center / cover no-repeat;
+}
+
+.project-details span {
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: Lato, sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.about-logo img{
+	width: 100%;
+	height: auto;
+}
+
+.project-details {
+	display: block;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+    width: calc(100% - 20px);
+    height: 245px; /* TEMP FIX*/
+    margin-bottom: 10px;
+}
+
+.project-details h3 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+.project-card:hover .project-details {
+	display: block;
+}
+
+#about .container {
+	margin-bottom: 10px;
+}
+
+#education {
+	background-color: #EEE;
+}
+
+#projects .container {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#education .container {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#contact {
+	padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../assets/img/contact.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#contact h2 {
+	margin-top: 5px;
+}
+
+.banner-social-buttons {
+	float: right;
+}
+
+.banner-social-buttons li {
+	margin-bottom: 10px;
+}
+
+.copyright {
+    margin: 25px 0;
+    color: #777;
+}
+
+.external-link {
+	float: right;
+	clear: both;
+}
+
+a .external-link {
+	color: white;
+}
+
+a .external-link:hover {
+	color: #EEE;
+}
+
+.project-details p {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
