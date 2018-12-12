@@ -1,84 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  background-color: #9471ff;
-  overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #9471ff;
+    overflow: hidden;
 }
 
 #left {
-  flex-basis: 70%;
-  height: 70vh;
-  background-color: #a98cff;
+    flex-basis: 70%;
+    height: 70vh;
+    background-color: #a98cff;
 }
 
 #left::after {
-  content: '';
-  position: relative;
-  left: 0;
-  top: calc(100% + 210px);
-  width: 0;
-  height: 0;
-  border-left: 0px solid transparent;
-  border-right: 70vw solid transparent;
-  border-top: 210px solid #a98cff;
-  clear: both;
+    content: '';
+    position: relative;
+    left: 0;
+    top: calc(100% + 210px);
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 70vw solid transparent;
+    border-top: 210px solid #a98cff;
+    clear: both;
 }
 
 #right {
-  flex-basis: 30%;
-  height: 70vh;
-  background-color: #bda7ff;
+    flex-basis: 30%;
+    height: 70vh;
+    background-color: #bda7ff;
 }
 
 #right::after {
-  content: '';
-  position: relative;
-  left: 0;
-  top: calc(100% + 180px);
-  width: 0;
-  height: 0;
-  border-left: 30vw solid transparent;
-  border-right: 0px solid transparent;
-  border-top: 180px solid #bda7ff;
-  clear: both;
+    content: '';
+    position: relative;
+    left: 0;
+    top: calc(100% + 180px);
+    width: 0;
+    height: 0;
+    border-left: 30vw solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 180px solid #bda7ff;
+    clear: both;
 }
 
 #content {
-  position: absolute;
-  top: 30%;
-  width: 80%;
-  margin: 0 10%;
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 #content p.header {
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 3rem;
-  margin-bottom: 1rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 #content p.content {
-  color: rgba(0, 0, 0, 0.6);
-  max-width: 50%;
-  margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 50%;
+    margin-bottom: 1rem;
 }
 
 #social {
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-start;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #social a {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1.5rem;
-  margin-right: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    margin-right: 1rem;
 }
