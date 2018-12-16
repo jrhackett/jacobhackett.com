@@ -1,14 +1,14 @@
 language: python
 python:
-  - "3.6"
+    - "3.6"
 
 before_install:
-  - pip install awscli
+    - pip install awscli
 
 stages:
-  - deploy
+    - deploy
 
 jobs:
-  include:
-    - stage: deploy
-      script: aws s3 cp ./ $S3_BUCKET_URI --recursive --exclude ".gitignore" --exclude ".git/*" --exclude ".travis.yml"
+    include:
+        - stage: deploy
+          script: aws s3 cp ./ $S3_BUCKET_URI --recursive --exclude ".gitignore" --exclude ".git/*" --exclude ".travis.yml"
