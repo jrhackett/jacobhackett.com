@@ -11,4 +11,4 @@ stages:
 jobs:
     include:
         - stage: deploy
-          script: aws s3 cp ./ $S3_BUCKET_URI --recursive --exclude ".gitignore" --exclude ".git/*" --exclude ".travis.yml"
+          script: aws s3 cp ./ $S3_BUCKET_URI --recursive --exclude ".gitignore" --exclude ".git/*" --exclude ".travis.yml" --exclude "README.md"
